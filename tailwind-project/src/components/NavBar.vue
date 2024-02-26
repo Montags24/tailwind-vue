@@ -15,7 +15,7 @@
                 Sign In/Explore
             </a>
             <img src="../assets/icons/hamburger.svg" alt="hamburger" style="height: 25px;width: 25px;"
-                class="hidden max-lg:block hover:cursor-pointer">
+                class="hidden max-lg:block hover:cursor-pointer me-2">
         </nav>
     </header>
 </template>

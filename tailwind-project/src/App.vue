@@ -1,7 +1,7 @@
 <template>
   <main>
     <NavBar></NavBar>
-    <section class="xl:padding-1 wide:padding-r padding-b">
+    <section class="xl:padding-l wide:padding-r padding-b">
       <Hero></Hero>
     </section>
     <section class="padding">
