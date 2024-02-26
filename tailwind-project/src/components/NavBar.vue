@@ -5,7 +5,7 @@
                 <img src="../assets/images/header-logo.svg" alt="header-logo" style="height: 29px;width: 130px;">
             </a>
             <ul class="flex flex-1 justify-center items-center gap-16 max-lg:hidden">
-                <l1 v-for="(navlink, index) in navlinks" :key="index"><a href="{{ navlink.href }}"
+                <l1 v-for="(navlink, index) in  navlinks " :key="index"><a :href=navlink.href
                         class="font-montserrat leading-normal text-lg text-slate-gray hover:underline">{{ navlink.label
                         }}</a>
                 </l1>
