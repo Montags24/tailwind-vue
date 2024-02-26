@@ -1,46 +1,61 @@
 <template>
   <main>
-    nav
-    <div class="container mx-auto">
-      <div class="font-sans text-5xl font-semibold p-3 block text-center">
-        A utility-first CSS framework for
-        <span class="text-teal-500">rapidly building custom designs.
-        </span>
-      </div>
-      <div>
-        <p class="text-slate-600 text-xl text-center">
-          Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you
-          need to build bespoke designs without any annoying opinionated styles you have to fight to override.
-        </p>
-      </div>
-      <div class="p-2 flex justify-center">
-        <button class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded shadow-md mx-2">
-          Get Started
-        </button>
-        <button class="bg-white hover:bg-gray-100 text-black font-semibold py-3 px-4 rounded shadow-md mx-2">
-          Why Tailwind?
-        </button>
-      </div>
-    </div>
+    <NavBar></NavBar>
+    <section class="xl:padding-1 wide:padding-r padding-b">
+      <Hero></Hero>
+    </section>
+    <section class="padding">
+      <PopularProducts></PopularProducts>
+    </section>
+    <section class="padding">
+      <SuperQuality></SuperQuality>
+    </section>
+    <section class="padding-x py-10">
+      <Services></Services>
+    </section>
+    <section class="padding">
+      <SpecialOffer></SpecialOffer>
+    </section>
+    <section class="bg-pale-blue padding">
+      <CustomerReviews></CustomerReviews>
+    </section>
+    <section class="padding-x sm:py-32 py-16 w-full">
+      <Subscribe></Subscribe>
+    </section>
+    <section class="bg-black padding-x padding-t pb-8 ">
+      <FooterBar></FooterBar>
+    </section>
   </main>
 </template>
 
 <script setup>
 </script>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
+<script>
+import NavBar from './components/NavBar.vue';
+import CustomerReviews from './components/CustomerReviews.vue';
+import FooterBar from './components/Footer.vue';
+import Hero from './components/Hero.vue';
+import PopularProducts from './components/PopularProducts.vue';
+import Services from './components/Services.vue';
+import SpecialOffer from './components/SpecialOffer.vue';
+import SuperQuality from './components/SuperQuality.vue';
+import Subscribe from './components/Subscribe.vue';
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
+export default {
+  components: {
+    NavBar,
+    CustomerReviews,
+    FooterBar,
+    Hero,
+    PopularProducts,
+    Services,
+    SpecialOffer,
+    SuperQuality,
+    Subscribe
+  },
+};
 
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+</script>
+
+<style scoped></style>
