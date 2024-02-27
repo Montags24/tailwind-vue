@@ -1,8 +1,10 @@
 <template>
     <button
-        class="flex justify-center items-center gap-2 px-7 py-3 border font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red">{{
-            label
-        }} <img v-if="iconURL" :src="iconURL" alt="arrow right" class="ml-2 rounded-full w-5 h-5"></button>
+        class="flex justify-center items-center gap-2 px-7 py-3 border font-montserrat text-lg leading-none rounded-full"
+        :class="backgroundColour ? [backgroundColour, borderColour, textColour] : ['text-white', 'bg-coral-red']">
+        {{ label }}
+        <img v-if="iconURL" :src="iconURL" alt="arrow right" class="ml-2 rounded-full w-5 h-5">
+    </button>
 </template>
 
 <script>
@@ -13,7 +15,19 @@ export default {
             default: "Click Me"
         },
         iconURL: {
-            type: String
+            type: String,
+        },
+        backgroundColour: {
+            type: String,
+            default: null
+        },
+        borderColour: {
+            type: String,
+            default: null
+        },
+        textColour: {
+            type: String,
+            default: null
         }
     },
 }

@@ -5,13 +5,16 @@
             <p class="lg:max-w-lg mt-2 font-montserrat text-slate-gray">Experience top notch quality with our sought after
                 products</p>
         </div>
-
         <div class="mt-16 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
             <PopularProductCard v-for="(product, index) in products" :key="index" :imgURL=product.imgURL
                 :name="product.name" :price="product.price">
             </PopularProductCard>
         </div>
-
+        <div class="mt-16 flex justify-between gap-4 max-md:flex-wrap">
+            <PopularProductCard v-for="(product, index) in products" :key="index" :imgURL="product.imgURL"
+                :name="product.name" :price="product.price">
+            </PopularProductCard>
+        </div>
     </section>
 </template>
 

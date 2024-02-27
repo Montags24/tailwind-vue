@@ -1,0 +1,32 @@
+<template>
+    <div class="flex-1 sm:w-[350px] sm-min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16">
+        <div class="flex w-11 h-11 justify-center items-center bg-coral-red rounded-full">
+            <img :src="imgURL" :alt="label" style="width: 24px; height: 24px;">
+        </div>
+        <h3 class="mt-5 font-palanquin text-3xl leading-normal font-bold">{{ label }}</h3>
+        <h3 class="mt-3 font-montserrat text-lg leading-normal text-slate-gray">{{ subtext }}</h3>
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+        imgURL: {
+            type: String
+        },
+        label: {
+            type: String
+        },
+        subtext: {
+            type: String
+        },
+    },
+    data() {
+        return {
+        }
+    },
+
+}
+</script>
+
+<style lang="scss" scoped></style>

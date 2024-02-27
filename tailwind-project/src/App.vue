@@ -1,6 +1,9 @@
 <template>
   <main>
     <NavBar></NavBar>
+    <section class="flex padding">
+      <SideBar></SideBar>
+    </section>
     <section class="xl:padding-l wide:padding-r padding-b">
       <Hero></Hero>
     </section>
@@ -41,6 +44,7 @@ import Services from './components/Services.vue';
 import SpecialOffer from './components/SpecialOffer.vue';
 import SuperQuality from './components/SuperQuality.vue';
 import Subscribe from './components/Subscribe.vue';
+import SideBar from './components/SideBar.vue';
 
 export default {
   components: {
@@ -52,7 +56,8 @@ export default {
     Services,
     SpecialOffer,
     SuperQuality,
-    Subscribe
+    Subscribe,
+    SideBar
   },
 };
 

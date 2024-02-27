@@ -18,10 +18,6 @@
         <div class="flex-1 flex justify-center items-center">
             <img :src="shoe8" alt="shoe8" style="width:570px;height:522px;">
         </div>
-
-        <div class="border-2 border-coral-red p-20 ">
-
-        </div>
     </section>
 </template>
 
