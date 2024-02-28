@@ -10,11 +10,6 @@
                 :name="product.name" :price="product.price">
             </PopularProductCard>
         </div>
-        <div class="mt-16 flex justify-between gap-4 max-md:flex-wrap">
-            <PopularProductCard v-for="(product, index) in products" :key="index" :imgURL="product.imgURL"
-                :name="product.name" :price="product.price">
-            </PopularProductCard>
-        </div>
     </section>
 </template>
 

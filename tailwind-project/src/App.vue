@@ -1,9 +1,9 @@
 <template>
   <main>
     <NavBar></NavBar>
-    <section class="flex padding">
+    <!-- <section class="flex padding">
       <SideBar></SideBar>
-    </section>
+    </section> -->
     <section class="xl:padding-l wide:padding-r padding-b">
       <Hero></Hero>
     </section>
